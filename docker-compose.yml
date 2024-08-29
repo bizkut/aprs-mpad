@@ -1,0 +1,7 @@
+services:
+  aprs-mpad:
+    image: bizkut/aprs-mpad:latest
+    volumes:
+      - ./mpad_apprise_config.yml:/app/src/mpad_apprise_config.yml:ro
+      - ./mpad_api_access_keys.cfg:/app/src/mpad_api_access_keys.cfg:ro
+      - ./mpad_config.py:/app/src/mpad_config.py:ro
